@@ -1,5 +1,4 @@
 .vscode
-*.nix
 *.o
 space_invader
 *.a
