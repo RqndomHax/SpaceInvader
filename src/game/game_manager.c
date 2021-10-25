@@ -16,8 +16,7 @@ int run_game(space_t *space)
     print_display(space);
     while (space->is_running) {
         manage_game(space);
-        if (space->config.display == SFML)
-            print_sfml(space);
+        print_sfml(space);
         result = move_ship(space);
         if (result != 2) {
             space->is_running = 0;

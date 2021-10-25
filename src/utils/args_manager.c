@@ -52,14 +52,6 @@ int is_command(space_t *space, int *index)
         return (replace_value(&space->argv[++(*index)], &space->config.fps));
     if (strcmp(space->argv[(*index)], "--tickrate") == 0)
         return (replace_value(&space->argv[++(*index)], &space->config.tickrate));
-    if (strcmp(space->argv[(*index)], "--ncurses") == 0) {
-        space->config.display = NCURSES;
-        return (1);
-    }
-    if (strcmp(space->argv[(*index)], "--sfml") == 0) {
-        space->config.display = SFML;
-        return (1);
-    }
     if (strncmp("--", space->argv[(*index)], 2) == 0) {
         fprintf(stderr, "Invalid command '%s' !\n", space->argv[(*index)]);
         return (-2);

@@ -10,9 +10,12 @@
 
 typedef struct config_s
 {
-    enum display_e display;
     int fps;
     int tickrate;
+    int ennemy_speed;
+    int obstacle_speed;
+    int missile_speed;
+    int self_speed;
 }config_t;
 
 #endif /* !CONFIG_H_ */

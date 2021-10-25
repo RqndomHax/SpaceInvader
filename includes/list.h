@@ -6,7 +6,6 @@
 */
 
 #include <stdlib.h>
-#include <assert.h>
 
 #ifndef LIST_H_
 #define LIST_H_

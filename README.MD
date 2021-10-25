@@ -4,7 +4,6 @@
 ```yml
 fps:        60 # This is the fps cap".
 tickrate:   12 # This is the tick rate of the game, tickrate: 10 means 10 ticks per second.
-display:    sfml # This is the type of display of the game (ncurses / sfml)).
 ```
 
 ##### Note that if a value is incorrect in the config file, it will be set to the default config values.
@@ -23,7 +22,7 @@ make re
 
 ###### Examples
 
-- Start the program with the desired config path (default `snake.cfg`)
+- Start the program with the desired config path (default `space_invader.cfg`)
 ```bash
 ./space_invader configPath
 ```
@@ -37,7 +36,7 @@ make re
 
 - __To avoid any textures issue please use the same texture size !__
 - Config is overwritten by the command arguments.
-- If you're using SFML display and the tickrate changes nothing it's maybe because your fps cap is too low.
+- If the tickrate changes nothing on the speed of the game it's maybe because your fps cap is too low.
 
 ### Have fun playing my game !
 

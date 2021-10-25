@@ -13,8 +13,6 @@ CFLAGS 		+= -W -Wall -Wextra
 
 SFMLFLAGS 	+= -lcsfml-graphics -lcsfml-window -lcsfml-system -lcsfml-audio
 
-NCURSEFLAGS += -lncurses
-
 CC		= gcc
 
 SRC		= $(wildcard src/*.c)
@@ -35,7 +33,7 @@ LIB		= lib/libmy.a
 all: $(OUT)
 
 $(OUT): $(LIB) $(OBJ)
-	$(CC) -o $@ $(OBJ) $(CFLAGS) $(SFMLFLAGS) $(NCURSEFLAGS)
+	$(CC) -o $@ $(OBJ) $(CFLAGS) $(SFMLFLAGS)
 
 $(LIB): $(LIBOBJ)
 	$(AR) rsc $@ $(LIBOBJ)

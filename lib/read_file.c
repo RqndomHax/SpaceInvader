@@ -6,33 +6,48 @@
 */
 
 #include <stdlib.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
+#include <stdio.h>
 
-static int exit_file(int fd, char **content)
+
+static long unsigned int fsize(FILE *fd)
 {
-    close(fd);
-    if (*content != NULL)
-        free(*content);
-    return (0);
+    long unsigned int size = 0;
+    int prev = ftell(fd);
+
+    prev = ftell(fd);
+    fseek(fd, 0L, SEEK_END);
+    size = ftell(fd);
+    fseek(fd,prev,SEEK_SET);
+    return (size);
 }
+
+// static int exit_file(FILE *fd, char **content)
+// {
+//     fclose(fd);
+//     if (*content != NULL)
+//         free(*content);
+//     return (0);
+// }
 
 int read_file(char *filepath, char **content)
 {
-    int fd = -1;
-    struct stat sb;
+    FILE *fd = NULL;
+    long unsigned int size = 0;
 
-    fd = open(filepath, O_RDONLY);
-    if (fd < 0)
+    (void) content;
+    if ((fd = fopen(filepath, "r")) == NULL) {
+        perror("fopen");
         return (0);
-    if (stat(filepath, &sb) || !S_ISREG(sb.st_mode))
-        return (exit_file(fd, content));
-    *content = malloc(sb.st_size + 1);
-    if (!(*content) || read(fd, *content, sb.st_size) == -1)
-        return (exit_file(fd, content));
-    (*content)[sb.st_size] = 0;
-    close(fd);
+    }
+    size = fsize(fd);
+    *content = malloc(size + 1);
+    if (!(*content) || fread(*content, 1, size, fd) != size) {
+        if (*content)
+            free(*content);
+        perror("fread");
+        return (0);
+    }
+    (*content)[size] = 0;
+    fclose(fd);
     return (1);
 }

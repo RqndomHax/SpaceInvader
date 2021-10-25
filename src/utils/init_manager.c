@@ -12,7 +12,6 @@
 
 void init_setup(space_t *space, char **argv)
 {
-    space->config.display = DEFAULT;
     space->config.fps = -1;
     space->config.tickrate = -1;
     space->config_path = NULL;
@@ -22,21 +21,12 @@ void init_setup(space_t *space, char **argv)
 void init_config(space_t *space)
 {
     char **config = NULL;
-    char *tmp = NULL;
 
     config = get_config(space->config_path);
     if (config == NULL)
         return;
     config_priority(config, "fps", &space->config.fps);
     config_priority(config, "tickrate", &space->config.tickrate);
-    if (space->config.display == DEFAULT) {
-        tmp = my_config_get_string(config, "display");
-        if (tmp != NULL) {
-            if (strcmp(tmp, "sfml") == 0)
-                space->config.display = SFML;
-            free(tmp);
-        }
-    }
     free_array(config);
 }
 

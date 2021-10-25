@@ -36,12 +36,9 @@ void update_coordinates(enum direction_e direction, config_t *config);
 
 /* --- DISPLAY --- */
 int init_display(space_t *space);
-int init_ncurses(space_t *space);
 int init_sfml(space_t *space);
-void print_ncurses(space_t *space);
 void print_sfml(space_t *space);
 void sfml_display(space_t *space);
-void ncurses_display(space_t *space);
 void print_display(space_t *space);
 void print_win(space_t *space);
 void print_lose(space_t *space);

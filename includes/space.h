@@ -5,8 +5,8 @@
 ** space invader structure
 */
 
-#ifndef SNAKE_H_
-#define SNAKE_H_
+#ifndef SPACE_H_
+#define SPACE_H_
 
 #include "list.h"
 #include "config.h"
@@ -23,4 +23,4 @@ typedef struct space_s
     sfml_t sfml;
 }space_t;
 
-#endif /* !SNAKE_H_ */
+#endif /* !SPACE_H_ */
