@@ -16,6 +16,7 @@ typedef struct config_s
     int obstacle_speed;
     int missile_speed;
     int self_speed;
+    int move_mode;
 }config_t;
 
 #endif /* !CONFIG_H_ */

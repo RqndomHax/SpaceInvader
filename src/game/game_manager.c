@@ -16,13 +16,12 @@ int run_game(space_t *space)
     print_display(space);
     while (space->is_running) {
         manage_game(space);
-        print_sfml(space);
+        print_display(space);
         result = move_ship(space);
         if (result != 2) {
             space->is_running = 0;
             return (result);
         }
-        print_display(space);
     }
     space->is_running = 0;
     return (1);

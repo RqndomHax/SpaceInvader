@@ -12,7 +12,7 @@ int init_sfml(space_t *space)
 {
     sfVideoMode mode = {1920, 1080, 8};
 
-    space->sfml.window = sfRenderWindow_create(mode, "Snake by RqndomHax", sfResize | sfClose, NULL);
+    space->sfml.window = sfRenderWindow_create(mode, "Space Invader by RqndomHax", sfResize | sfClose, NULL);
     if (space->sfml.window == NULL)
         return (0);
     sfRenderWindow_setFramerateLimit(space->sfml.window, space->config.fps);
@@ -41,6 +41,9 @@ void sfml_display(space_t *space)
             sfRenderWindow_close(space->sfml.window);
             space->is_running = 0;
             return;
+        }
+        if (space->config.move_mode == 1 && event.type == sfEvtMouseMoved) {
+            // TODO
         }
         if (event.type == sfEvtKeyPressed && event.key.code == sfKeyUp) {
             // TODO
