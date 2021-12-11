@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** config
-*/
-
 #ifndef CONFIG_H_
 #define CONFIG_H_
 

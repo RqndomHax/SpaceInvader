@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** lib
-** File description:
-** basic config file
-*/
-
 #include <stdlib.h>
 #include <string.h>
 

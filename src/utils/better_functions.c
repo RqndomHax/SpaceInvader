@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** better functions utils
-*/
-
 #include "../../includes/lib.h"
 
 // Used to let the command args overwrite the config

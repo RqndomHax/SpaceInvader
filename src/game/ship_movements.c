@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** game movements
-*/
-
 #include "../../includes/game.h"
 
 int move_ship(space_t *space)

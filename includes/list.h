@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** list
-** File description:
-** linked lists
-*/
-
 #include <stdlib.h>
 
 #ifndef LIST_H_

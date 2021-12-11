@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** lib
-** File description:
-** return 0 if a string is not numeric else it returns 1
-*/
-
 static int is_num(char);
 
 int my_isnum(char const *str)

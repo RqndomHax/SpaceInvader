@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** help
-*/
-
 #include <stdio.h>
 #include <string.h>
 #include "../../includes/game.h"

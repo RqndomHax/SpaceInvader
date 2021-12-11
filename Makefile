@@ -1,10 +1,3 @@
-##
-## EPITECH PROJECT, 2021
-## space invader
-## File description:
-## Makefile
-##
-
 CFLAGS 		= -Llib -lmy
 
 CFLAGS 		+= -W -Wall -Wextra

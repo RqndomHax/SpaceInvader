@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_str_to_word_array
-** File description:
-** returns word array from char array
-*/
-
 #include <string.h>
 #include <stdlib.h>
 

@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** lib
-** File description:
-** frees array
-*/
-
 #include <stdlib.h>
 
 void free_array(char **array)

@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** lib
-** File description:
-** returns the content of a file
-*/
-
 #include <stdlib.h>
 #include <stdio.h>
 

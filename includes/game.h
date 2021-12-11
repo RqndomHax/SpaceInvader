@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** game header
-*/
-
 #ifndef GAME_H_
 #define GAME_H_
 

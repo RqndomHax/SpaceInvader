@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** game manager
-*/
-
 #include "../../includes/game.h"
 #include "../../includes/list.h"
 #include <unistd.h>

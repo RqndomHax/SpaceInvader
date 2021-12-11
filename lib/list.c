@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** lib
-** File description:
-** linked lists
-*/
-
 #include "../includes/list.h"
 
 void list_destroy(list_t **list)

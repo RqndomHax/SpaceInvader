@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** init manager
-*/
-
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>

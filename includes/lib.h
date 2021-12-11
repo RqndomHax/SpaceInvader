@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** lib
-*/
-
 #ifndef LIB_H_
 #define LIB_H_
 

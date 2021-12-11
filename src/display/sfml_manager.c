@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** sfml manager
-*/
-
 #include "../../includes/game.h"
 
 // Graphical display with sfml

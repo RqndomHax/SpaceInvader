@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** space invader
-** File description:
-** display
-*/
-
 #ifndef DISPLAY_H_
 #define DISPLAY_H_
 
